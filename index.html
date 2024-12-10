@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrocarril del Pacífico en el Valle del Cauca</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Header con el título y navegación principal -->
+    <header>
+        <h1>Ferrocarril del Pacífico en el Valle del Cauca</h1>
+        <nav>
+            <ul>
+                <li><a href="#protagonistas">Protagonistas</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#registro">Registro Documental</a></li>
+                <li><a href="#subir-contenido">Sube tu contenido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de Protagonistas -->
+        <section id="protagonistas">
+            <h2>Protagonistas</h2>
+            <article>
+                <img src="imagenes/ferroviario1.jpg" alt="Ferroviario 1">
+                <h3>Juan Pérez</h3>
+                <p>Juan Pérez fue un destacado ferroviario que trabajó durante 30 años en el Ferrocarril del Pacífico...
+                </p>
+                <a href="#">Leer más sobre Juan Pérez</a>
+            </article>
+            <br>
+            <article>
+                <img src="imagenes/ferroviario2.jpg" alt="Ferroviario 2">
+                <h3>Carlos Gómez</h3>
+                <p>Carlos Gómez desempeñó un papel clave en el desarrollo de la infraestructura ferroviaria...</p>
+                <a href="#">Leer más sobre Carlos Gómez</a>
+            </article>
+            <br>
+            <article>
+                <img src="imagenes/ferroviario3.jpg" alt="Ferroviario 3">
+                <h3>María Rodríguez</h3>
+                <p>María Rodríguez fue una de las primeras mujeres en trabajar en el Ferrocarril del Pacífico...</p>
+                <a href="#">Leer más sobre María Rodríguez</a>
+            </article>
+        </section>
+
+        <!-- Sección de Historia -->
+        <section id="historia">
+            <h2>Historia del Ferrocarril del Pacífico</h2>
+            <div class="carrusel">
+                <p>Primera fase de construcción del ferrocarril en 1915...</p>
+                <p>Expansión de las vías en los años 30...</p>
+                <p>El impacto social y económico en el Valle del Cauca...</p>
+            </div>
+        </section>
+
+        <!-- Sección de Registro Documental -->
+        <section id="registro">
+            <h2>Registro Documental</h2>
+            <div class="registro-item">
+                <h3>Entrevistas</h3>
+                <video src="y2mate.com - Ferrocarril del Pacífico y sus estaciones_360P.mp4" controls></video>
+            </div>
+            <div class="registro-item">
+                <h3>Fotografías</h3>
+                <img src="imagenes/ferrocarril3.png" alt="Fotografía del ferrocarril">
+            </div>
+            <div class="registro-item">
+                <h3>Prensa de la época</h3>
+                <img src="imagenes/large.jpg" alt="Artículo de prensa antiguo">
+            </div>
+            <div class="registro-item">
+                <h3>Creaciones audiovisuales</h3>
+                <video src="y2mate.com - Ferrocarril del Pacífico  érase una vez  1a parte_v144P.mp4" controls></video>
+            </div>
+        </section>
+
+        <!-- Sección para subir contenido -->
+        <section id="subir-contenido">
+            <h2>Sube tu contenido sobre el Ferrocarril del Pacífico</h2>
+            <form action="subir.php" method="post" enctype="multipart/form-data">
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="archivo">Sube tu archivo:</label>
+                <input type="file" id="archivo" name="archivo" accept=".jpg,.png,.mp4,.pdf" required>
+
+                <input type="submit" value="Subir">
+            </form>
+        </section>
+    </main>
+<br>
+    <!-- Footer -->
+    <footer>
+        <em>Desarrollado por Juan Pablo Saavedra</em>
+    </footer>
+
+</body>
+
+</html>
